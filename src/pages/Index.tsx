@@ -10,79 +10,79 @@ const Index = () => {
 
   const categories = [
     { id: 'all', label: 'Все проекты' },
-    { id: 'cottages', label: 'Коттеджи' },
-    { id: 'townhouses', label: 'Таунхаусы' },
-    { id: 'estates', label: 'Поселки' },
+    { id: 'commercial', label: 'Реклама' },
+    { id: 'corporate', label: 'Корпоративное' },
+    { id: 'social', label: 'Соцсети' },
   ];
 
   const portfolio = [
     {
       id: 1,
-      title: 'Видеотур по коттеджному поселку Березки',
-      category: 'estates',
-      thumbnail: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+      title: 'Рекламный ролик для Tech стартапа',
+      category: 'commercial',
+      thumbnail: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '3:20',
+      duration: '0:45',
     },
     {
       id: 2,
-      title: 'Презентация коттеджа 450 м²',
-      category: 'cottages',
-      thumbnail: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80',
+      title: 'Корпоративная презентация IT компании',
+      category: 'corporate',
+      thumbnail: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '2:45',
+      duration: '2:30',
     },
     {
       id: 3,
-      title: 'Таунхаусы премиум-класса с высоты',
-      category: 'townhouses',
-      thumbnail: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&q=80',
+      title: 'Вирусный контент для Instagram',
+      category: 'social',
+      thumbnail: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '1:50',
+      duration: '0:15',
     },
     {
       id: 4,
-      title: 'Элитный коттедж на берегу озера',
-      category: 'cottages',
-      thumbnail: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+      title: 'Промо ролик для Fashion бренда',
+      category: 'commercial',
+      thumbnail: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '4:15',
+      duration: '1:20',
     },
     {
       id: 5,
-      title: 'Строительство поселка — таймлапс',
-      category: 'estates',
-      thumbnail: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+      title: 'Продуктовое видео для e-commerce',
+      category: 'commercial',
+      thumbnail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '2:00',
+      duration: '1:00',
     },
     {
       id: 6,
-      title: 'Современные таунхаусы в Подмосковье',
-      category: 'townhouses',
-      thumbnail: 'https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800&q=80',
+      title: 'Репортаж с корпоративного события',
+      category: 'corporate',
+      thumbnail: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      duration: '3:30',
+      duration: '3:15',
     },
   ];
 
   const services = [
-    { icon: 'Video', title: 'Видеотуры по объектам', description: 'Профессиональная съемка интерьеров и экстерьеров с 4K качеством и стабилизацией' },
-    { icon: 'Plane', title: 'Аэросъемка с дрона', description: 'Панорамные виды территории, инфраструктуры и окружения с высоты птичьего полета' },
-    { icon: 'Layout', title: '3D-презентации проектов', description: 'Анимация планировок, визуализация строительства и будущего благоустройства' },
-    { icon: 'TrendingUp', title: 'Рекламные ролики', description: 'Продающие видео для застройщиков с акцентом на преимущества и образ жизни' },
+    { icon: 'Video', title: 'Рекламные ролики', description: 'Создание продающей видеорекламы для всех digital-каналов и ТВ' },
+    { icon: 'Camera', title: 'Съемка и продакшн', description: 'Полный цикл видеопроизводства от идеи до готового контента' },
+    { icon: 'Sparkles', title: 'Анимация и графика', description: 'Моушн-дизайн, 2D/3D анимация и визуальные эффекты' },
+    { icon: 'Share2', title: 'Контент для соцсетей', description: 'Вирусные видео для Instagram, TikTok, YouTube Shorts' },
   ];
 
   const pricing = [
-    { name: 'Экспресс', price: '80 000', features: ['Видео до 2 минут', '1 день съемки', 'Съемка интерьера или территории', 'Цветокоррекция', 'Фоновая музыка'] },
-    { name: 'Стандарт', price: '200 000', features: ['Видео до 5 минут', '2 дня съемки', 'Интерьер + экстерьер + дрон', 'Профессиональный монтаж', '3D-анимация планировки', 'Закадровый текст'] },
-    { name: 'Комплекс', price: '600 000', features: ['Полноценный ролик 5-10 минут', 'Съемка нескольких объектов', 'Аэросъемка территории', 'Сценарий и режиссура', 'Интервью с жителями', 'Профессиональная озвучка'] },
+    { name: 'Старт', price: '50 000', features: ['Видео до 1 минуты', '1 день съемки', 'Базовый монтаж', 'Цветокоррекция', 'Фоновая музыка'] },
+    { name: 'Профи', price: '150 000', features: ['Видео до 3 минут', '2 дня съемки', 'Продвинутый монтаж', 'Моушн-графика', 'Саунд-дизайн', 'Сценарий'] },
+    { name: 'Премиум', price: '500 000', features: ['Любая длительность', 'Неограниченная съемка', 'Полный продакшн', '3D анимация', 'Профессиональная озвучка', 'Режиссура'] },
   ];
 
   const blog = [
-    { title: 'Почему видео увеличивает продажи загородной недвижимости на 85%', date: '20 октября 2024', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80' },
-    { title: 'Как снимать элитную недвижимость: 7 правил', date: '12 октября 2024', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80' },
-    { title: 'Аэросъемка поселков: технические аспекты', date: '5 октября 2024', image: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=600&q=80' },
+    { title: 'Тренды видеомаркетинга 2024: что работает', date: '15 октября 2024', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80' },
+    { title: 'Как увеличить охват видео в соцсетях', date: '8 октября 2024', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80' },
+    { title: 'Секреты качественной видеосъемки', date: '1 октября 2024', image: 'https://images.unsplash.com/photo-1533158326339-7f3cf2404354?w=600&q=80' },
   ];
 
   const filteredPortfolio = activeCategory === 'all' 
@@ -94,7 +94,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-heading font-bold">EstateVideo</h1>
+            <h1 className="text-2xl font-heading font-bold">VideoStudio</h1>
             <div className="hidden md:flex items-center gap-8">
               <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">Главная</a>
               <a href="#portfolio" className="text-sm font-medium hover:text-primary transition-colors">Кейсы</a>
@@ -116,19 +116,19 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-6 animate-fade-in-up">
             <h2 className="text-5xl md:text-7xl font-heading font-bold leading-tight">
-              Видео, которое продает
-              <span className="block text-primary">загородную недвижимость</span>
+              Видео, которое
+              <span className="block text-primary">продает</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Профессиональная видеосъемка для застройщиков и продавцов элитной загородной недвижимости
+              Создаем вирусный видеоконтент для брендов, которые хотят быть замеченными
             </p>
             <div className="flex flex-wrap gap-4 justify-center pt-6">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
                 <Icon name="Play" size={20} className="mr-2" />
-                Смотреть портфолио
+                Смотреть шоурил
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8">
-                Заказать съемку
+                Обсудить проект
               </Button>
             </div>
           </div>
@@ -136,20 +136,20 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 mt-20 animate-fade-in">
             <Card className="bg-card border-border hover:border-primary transition-colors">
               <CardContent className="p-8 text-center">
+                <div className="text-5xl font-heading font-bold text-primary mb-2">300+</div>
+                <p className="text-muted-foreground">Реализованных проектов</p>
+              </CardContent>
+            </Card>
+            <Card className="bg-card border-border hover:border-primary transition-colors">
+              <CardContent className="p-8 text-center">
                 <div className="text-5xl font-heading font-bold text-primary mb-2">150+</div>
-                <p className="text-muted-foreground">Снятых объектов</p>
+                <p className="text-muted-foreground">Довольных клиентов</p>
               </CardContent>
             </Card>
             <Card className="bg-card border-border hover:border-primary transition-colors">
               <CardContent className="p-8 text-center">
-                <div className="text-5xl font-heading font-bold text-primary mb-2">2.5 млрд</div>
-                <p className="text-muted-foreground">Продано недвижимости</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-card border-border hover:border-primary transition-colors">
-              <CardContent className="p-8 text-center">
-                <div className="text-5xl font-heading font-bold text-primary mb-2">85%</div>
-                <p className="text-muted-foreground">Продаж с видео</p>
+                <div className="text-5xl font-heading font-bold text-primary mb-2">50M+</div>
+                <p className="text-muted-foreground">Просмотров</p>
               </CardContent>
             </Card>
           </div>
@@ -160,7 +160,7 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Наши кейсы</h2>
-            <p className="text-lg text-muted-foreground">Портфолио загородной недвижимости</p>
+            <p className="text-lg text-muted-foreground">Портфолио проектов, которые работают</p>
           </div>
 
           <div className="flex flex-wrap gap-3 justify-center mb-12">
@@ -235,7 +235,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Услуги</h2>
-            <p className="text-lg text-muted-foreground">Полный спектр видеопродакшна для загородной недвижимости</p>
+            <p className="text-lg text-muted-foreground">Полный спектр видеопродакшна для вашего бренда</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -295,7 +295,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Блог</h2>
-            <p className="text-lg text-muted-foreground">Экспертные материалы о видеомаркетинге недвижимости</p>
+            <p className="text-lg text-muted-foreground">Полезные материалы о видеомаркетинге</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -324,15 +324,15 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-heading font-bold text-xl mb-4">EstateVideo</h3>
-              <p className="text-muted-foreground text-sm">Видео для загородной недвижимости</p>
+              <h3 className="font-heading font-bold text-xl mb-4">VideoStudio</h3>
+              <p className="text-muted-foreground text-sm">Профессиональное видеопроизводство</p>
             </div>
             <div>
               <h4 className="font-heading font-semibold mb-4">Услуги</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Видеотуры</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Аэросъемка</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">3D-презентации</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Реклама</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Корпоративное видео</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Контент для соцсетей</a></li>
               </ul>
             </div>
             <div>
@@ -346,13 +346,13 @@ const Index = () => {
             <div>
               <h4 className="font-heading font-semibold mb-4">Связь</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>info@estatevideo.ru</li>
-                <li>+7 (495) 789-45-67</li>
+                <li>info@videostudio.ru</li>
+                <li>+7 (495) 123-45-67</li>
               </ul>
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            © 2024 EstateVideo. Все права защищены.
+            © 2024 VideoStudio. Все права защищены.
           </div>
         </div>
       </footer>
